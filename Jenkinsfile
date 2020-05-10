@@ -9,7 +9,7 @@ pipeline {
         }
         stage("Start node"){
             steps{
-                sh 'npm start'
+                sh 'nohup npm start &'
             }
         }
     }
