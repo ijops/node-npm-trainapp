@@ -10,6 +10,7 @@ pipeline {
         stage("Start node"){
             steps{
                 sh 'nohup npm start &'
+                echo 'Running build automation'
             }
         }
     }
