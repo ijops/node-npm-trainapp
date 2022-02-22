@@ -9,7 +9,7 @@ pipeline {
         }
         stage("Start node"){
             steps{
-                sh 'forever start index.js'
+                sh 'forever start app.js'
             }
         }
     }
